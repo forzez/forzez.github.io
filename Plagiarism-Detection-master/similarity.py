@@ -25,6 +25,9 @@ def webVerify(string, results_per_sentence):
 def similarity(str1, str2):
     return (SequenceMatcher(None,str1,str2).ratio())*100
 
+def sum(similarity.ratio):
+    return (SequenceMatcher(similarity.ratio).ratio())*100
+
 def report(text):
 
     matching_sites = webVerify(purifyText(text), 2)
