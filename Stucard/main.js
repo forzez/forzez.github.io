@@ -13,18 +13,14 @@ function prev(){
 
       let inName = document.getElementById("inName").value;
       let inBirth = document.getElementById("inBirth").value;
-      let inField = document.getElementById("inField").value;
-      let inYear = document.getElementById("inYear").value;
       let inNum = document.getElementById("inNum").value;
 
       const name = document.getElementById("name");
       const birth = document.getElementById("birth");
-      const fieldYear = document.getElementById("fieldYear");
       const num = document.getElementById("num");
 
       name.innerHTML = inName;
       birth.innerHTML = inBirth;
-      fieldYear.innerHTML = inField + "0" + inYear;
       num.innerHTML = inNum;
 
       ctx.fillStyle = "#159";
@@ -38,7 +34,6 @@ function prev(){
       ctx.fillStyle = "#000";
       ctx.fillText(name.innerHTML, 110, 90);
       ctx.fillText(birth.innerHTML, 110, 115);
-      ctx.fillText(fieldYear.innerHTML, 110, 140);
       ctx.fillText("SubN° " + num.innerHTML, 110, 165);
       ctx.drawImage(image, 10, 65, 80, 110);
 }
